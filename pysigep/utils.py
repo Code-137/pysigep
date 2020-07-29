@@ -7,6 +7,7 @@ PRODUCAO = 2
 URLS = {
     HOMOLOGACAO: 'https://apphom.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente?wsdl',  # noqa
     PRODUCAO: 'https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente?wsdl',  # noqa
+    "PrecoPrazo": 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx?wsdl',
 }
 
 HOMOG_USUARIO = 'sigep'
