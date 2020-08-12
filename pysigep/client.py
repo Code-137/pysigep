@@ -262,3 +262,14 @@ class SOAPClient:
         }
 
         return self.clientePrecoPrazo.service.CalcPrecoPrazo(**params)
+
+    def bloquear_objeto(self, numero_etiqueta, id_plp):
+        params = {
+            "numeroEtiqueta": numero_etiqueta,
+            "idPlp": id_plp,
+            "tipoBloqueio": "FRAUDE_BLOQUEIO",
+            "acao": "DEVOLVIDO_AO_REMETENTE",
+            "usuario": self.usuario,
+            "senha": self.senha,
+        }
+        return self.cliente.service.bloquearObjeto(**params)
